@@ -1,0 +1,114 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <!-- SYLESHEETS
+            ============================================= -->
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/lightgallery.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/plugin.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/sm-core-css.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/sm-clean.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/thaw-flex.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/font.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+        <link rel="icon" href="{% static 'img/fav-icon.png' %}">
+        <script>
+            document.documentElement.className = 'js';
+
+        </script>
+        <!-- EXTERNAL STYLES
+            ============================================= -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <!-- DOCUMENT TITLES
+            ============================================= -->
+        <title>RX İstanbul </title><link rel="icon" href="{% static 'img/rx-logo.png' %}" type="image/icon type">
+
+    </head>
+
+    <body class="demo-1">
+        <!--MAIN WRAPPER START-->
+        <div class="main-wrapper clearfix">
+            <!-- HEADER START
+                ============================================= -->
+            <header id="header" class="header-style-1">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="header-clear clearfix">
+                            <div class="header-content-left clearfix">
+                                <!-- LOGO START
+                                ============================================= -->
+                                <div class="logo">
+                                    <a href="{%  url 'index'  %}"> <img src="{% static 'img/rx-logo.png' %}" alt="" width="100px" height="100 px" /> </a>
+                                </div>
+                                <!-- LOGO END -->
+                            </div>
+                            <div class="header-content-center clearfix">
+                                <!-- NAVIGATION START============================================= -->
+                                <nav class="main-nav">
+                                    <!-- Mobile menu toggle button (hamburger/x icon) -->
+                                    <input id="main-menu-state" type="checkbox" />
+                                    <label class="main-menu-btn sub-menu-trigger" for="main-menu-state">
+                                        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+                                    </label>
+                                    <!-- Sample menu definition -->
+                                    <ul id="main-menu" class="sm sm-clean">
+                                        
+                                        <li class="menu-item"><a href="{%  url 'index'  %}" class="menu-link active">Home</a></li>
+                                        <li class="menu-item"><a href="{%  url 'about'  %}" class="menu-link">About</a></li>
+                                        <li class="menu-item"><a href="{%  url 'event'  %}" class="menu-link">Events</a></li>
+                                        <li class="menu-item"><a href="{%  url 'artist'  %}"  class="menu-link">Artists</a></li>
+                                        <li class="menu-item"><a href="{%  url 'release'  %}"  class="menu-link">Releases</a></li>
+                                        <li class="menu-item"><a href="{%  url 'contact'  %}" class="menu-link">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- NAVIGATION END -->
+                            </div>
+
+
+                            <div class="header-content-right">
+                            <li class="menu-item"><a href="/user/login" class="menu-link">Login</a></li>
+                            </div>
+                            <div class="header-content-right">
+                                <li class="menu-item"><a href="/user/register" class="menu-link">Register</a></li>
+                                </div>
+                            
+
+
+                            <div class="header-content-right">
+                                
+                                <div class="header-info head-item clearfix">
+                                    <div class="info-wrap">
+                                        <div class="search-wrap">
+                                            <button id="btn-search" class="btn btn--search"><i class="icon-simple-line-icons-143"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                           
+
+
+
+                            <div class="search">
+                                <button id="btn-search-close" class="btn--search-close"><i class="icon-themify-1"></i></button>
+                                <form class="search__form">
+                                    <input class="search__input" name="search" type="search" placeholder="Search..." />
+                                    <span class="search__info">Hit enter to search or ESC to close</span>
+                                </form>
+                            </div><!-- /search -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER END -->
